@@ -1,0 +1,529 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* inicio menu */
+
+nav ul{
+    list-style: none;
+    background-color:goldenrod;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+a , li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: .5rem 1rem;
+    font-weight: 400;
+}
+
+.logo{
+    background-image: url(img/logo.png);
+    width: 60px;
+    height: 60px;
+    float: left;
+    background-size: cover;    
+}
+
+a li:hover{
+    border-bottom: solid 3px white;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+
+}
+
+/* fin menu */
+
+
+/** fotogrande **/
+
+
+.foto{
+    background-image: url(img/depie1.jpg);
+    width: 100%;
+    height: 700px;
+}
+
+.foto .textofoto{
+    padding-top: 300px;
+    width: 500px;
+    height: 200px;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 70px;
+
+}
+
+.calltoaction{
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: goldenrod;
+    padding-top: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+.calltoaction:hover{
+    background-color: darkred;
+}
+
+.calltoaction p{
+    font-size: 15px;
+    font-weight: 500;
+}
+/** fin fotogrande **/
+
+/** inicio main y sections **/
+
+#container{
+    width: 70%;
+    margin: 100px auto;
+    height: auto;
+    background-color: white;
+    display: grid;
+    row-gap: 200px;
+    column-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 100px 2fr 100px 1.5fr;
+    grid-template-areas: 
+    "menu1 menu2 menu3"
+    "titulo1 titulo1 titulo1"
+    "staff1 staff2 staff3"
+    "titulo2 titulo2 titulo2"
+    "blog1 blog2 blog3";
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo1 {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    grid-area: titulo1;
+    font-weight: 800;
+    border-bottom: 10px solid goldenrod;
+    font-size: 40px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo2 {
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    grid-area: titulo2;
+    font-weight: 800;
+    border-bottom: 10px solid goldenrod;
+    font-size: 40px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.menu1{
+    grid-area: menu1;
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+
+}
+
+.menu2{
+    grid-area: menu2;
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+
+}
+.menu3{
+    grid-area: menu3;
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+
+}
+
+.menu1 h2{
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.menu2 h2{
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.menu3 h2{
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.menu1 h2:hover{
+    background-color: rgba(139, 0, 0, 0.353);
+}
+.menu2 h2:hover{
+    background-color: rgba(139, 0, 0, 0.353);
+}
+.menu3 h2:hover{
+    background-color: rgba(139, 0, 0, 0.353);
+}
+
+.menu1 p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu2 p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu3 p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+.staff1{
+    grid-area: staff1;
+    text-align: center;
+
+}
+.staff2{
+    grid-area: staff2;
+    text-align: center;
+    
+
+}
+.staff3{
+    grid-area: staff3;
+    text-align: center;
+}
+
+
+
+.blog1{
+    width: 100%;
+    grid-area: blog1;
+    background-image: url(img/blog1-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    background-position: center;
+    height: 100%;
+}
+
+.blog1 h2{
+    padding-top: 150px;
+}
+
+.blog2 h2{
+    padding-top: 150px;
+}
+
+.blog3 h2{
+    padding-top: 150px;
+}
+
+
+.blog2{
+    grid-area: blog2;
+    background-image: url(img/blog2-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    height: 100%;
+}
+.blog3{
+    grid-area: blog3;
+    background-image: url(img/blog3-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    height: 100%;
+}
+
+/** fin main y sections **/
+
+
+/** inicio de formulario **/
+.contenedorform{
+    width: 100%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 2fr;
+    grid-template-areas: 
+    "tituloform tituloform"
+    "fotoform form";
+    row-gap: 200px;
+    margin-top: 200px;
+    column-gap: 5px;
+    box-sizing: border-box;
+
+}
+
+.tituloform{
+    text-align: center;
+    width: 70%;
+    grid-area: tituloform;
+    font-weight: 800;
+    border-bottom: 10px solid goldenrod;
+    font-size: 40px;
+    padding-bottom: 20px;
+    justify-self: center;
+    
+}
+
+.fotoform{
+    background-image: url(img/form.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: fotoform;
+    height: 100%;
+    justify-self: center;
+    display: flex;
+}
+
+.mapa{
+    padding: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    justify-items: center;
+    justify-self: center;
+}
+
+.formulario{
+    background-color: goldenrod;
+    width: 100%;
+    grid-area: form;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin: auto;
+
+}
+
+.fondoformulario{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+
+}
+
+
+
+.btn{
+
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: auto;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+input, textarea{
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid black;
+}
+
+/** inicio footer **/
+footer {
+    border-top: 10px solid black;
+    width: 100%;
+    height: 300px;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+footer h2{
+    font-size: 25px;
+    padding-top: 100px;
+    height: auto;
+}
+
+footer h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer h3 {
+    font-size: 15px;
+    font-weight: 300;
+
+}
+/** fin de footer **/
+
+
+/** Responsive **/
+
+@media screen and (max-width: 768px) {
+    body{
+        background-color: white;
+        height: auto;
+        box-sizing: border-box;
+
+    }
+
+
+    nav ul{
+        list-style: none;
+        background-color:goldenrod;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;   
+    }
+
+
+    
+.foto{
+    background-image: url(img/depie1.jpg);
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+
+
+    #container{
+        column-gap: 3px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas: 
+        "menu1"
+        "menu2"
+        "menu3"
+        "titulo1"
+        "staff1"
+        "staff2"
+        "staff3"
+        "titulo2"
+        "blog1"
+        "blog2"
+        "blog3";
+        row-gap: 60px;
+    }
+   
+
+
+.menu1{
+    grid-area: menu1;
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    height: 100%;
+
+}
+
+.menu2{
+    grid-area: menu2;
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    height: 100%;
+
+}
+.menu3{
+    grid-area: menu3;
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+    height: 100%;
+
+}
+
+.fotoform{
+    height: 500px;
+    width: 100%;
+}
+
+.formulario{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedorform{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, repeat(3, 2fr);
+    grid-template-areas: 
+    "tituloform"
+    "form"
+    "fotoform"
+    "footer";
+    box-sizing: border-box;
+    row-gap: 5px;
+
+
+}
+.footer{
+grid-area: footer;
+width: 100%;
+}
+}
