@@ -47,7 +47,7 @@ a li:hover{
 nav{
     width: 100%;
     position: fixed;
-
+    z-index: 1000px;
 }
 
 /* fin menu */
@@ -258,6 +258,16 @@ nav{
     background-image: url(img/blog1-01.jpg);
     background-size: 1000px;
     transition: all 2s;
+    animation-name: blog1;
+}
+
+@keyframes blog1 {
+    0%{background-size: 500;}
+    25%{background-size: 600;}
+    50%{background-size: 700;}
+    100%{background-size: 1000;}
+    
+    
 }
 
 .blog2{
